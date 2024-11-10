@@ -1,0 +1,268 @@
+/* Used for the background only */
+.bg-color {
+  color: #0a001c;
+}
+
+/* Used for filling secondary non-background elements */
+.main-color {
+  color: #492342;
+}
+
+/* Used for filling nested non-background elements */
+.secondary-color {
+  color: #914257;
+}
+
+/* Used for text on the background color */
+.text-color {
+  color: #ed9682;
+}
+
+/* Used for text on non-background */
+.highlight-color {
+  color: #f5af59;
+}
+
+/* Used for text that should stand out, like links */
+.link-color {
+  color: #f9f871;
+}
+
+/* Used to alert errors or other important info */
+.alert-color {
+  color: #cf1a1a;
+}
+
+/* Use as the background color for good toasts */
+.toast-good {
+  color: rgba(88, 180, 67, 0.75);
+}
+
+/* Use as the background color for information toasts */
+.toast-ok {
+  color: rgba(113, 234, 234, 0.75);
+}
+
+/* Use as the background color for error toasts */
+.toast-bad {
+  color: rgba(206, 78, 170, 0.75);
+}
+
+.App-background {
+  background-color: #0a001c;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  color: #ed9682;
+}
+
+.App-body {
+  background-color: #0a001c;
+  color: #ed9682;
+}
+
+.List-item {
+  background-color: #492342;
+  color: #f5af59;
+  font-size: calc(2px + 2vmin);
+  display: list-item;
+  align-items: left;
+  justify-content: left;
+}
+
+.Wallet-balance {
+  background-color: #0a001c;
+  color: #ed9682;
+  font-size: calc(2px + 2vmin);
+  height: calc(4px + 2vmin);
+  padding: 2px 2px 2px 2px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+}
+
+.Settings-bar {
+  background-color: #0a001c;
+  color: #ed9682;
+  font-size: calc(2px + 2vmin);
+  padding: 2px 2px 2px 2px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+}
+
+.Standout-text {
+  color: #f9f871;
+}
+
+.Alert-text {
+  color: #cf1a1a;
+}
+
+.tiny-vertical-divider {
+  width: auto;
+  height: calc(1vmin);
+  display: inline-block;
+}
+
+.hr-line-break {
+  border-color: #914257;
+  background-color: #f5af59;
+  height: 2px;
+  width: 100%;
+  margin-top: calc(1vmin);
+  margin-bottom: calc(1vmin);
+}
+
+.Button-generic {
+  background-color: #914257;
+  color: #f5af59;
+  font-size: calc(2px + 2vmin);
+  padding: 4px 4px 4px 4px;
+  border-radius: 1px;
+  margin: 2px 0px;
+  cursor: context-menu;
+}
+
+.Button-small {
+  background-color: #492342;
+  color: #ed9682;
+  font-size: calc(2vmin);
+  padding: 2px 1vmin 2px 1vmin;
+  border-radius: 1px;
+  margin: 2px 0px;
+  cursor: pointer;
+}
+
+.Monospace-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: calc(2vmin);
+  font-family: "Roboto Mono", "Menlo", "Monaco", "Consolas", "Courier New", monospace;
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
+
+.Standard-input-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: calc(2vmin);
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
+
+.Input-box-small {
+  background-color: #914257;
+  color: #f5af59;
+  font-size: calc(2vmin);
+  padding: 1px 1vmin 1px 1vmin;
+  border-radius: 1px;
+  margin: 2px 0px;
+  cursor: auto;
+}
+
+.Input-box-pubkey {
+  background-color: #914257;
+  color: #f5af59;
+  font-size: calc(1.5vmin);
+  padding: 1px 1vmin 1px 1vmin;
+  border-radius: 1px;
+  margin: 2px 0px;
+  cursor: auto;
+  overflow: auto;
+  width: calc(1.5vmin * 32);
+  /* Roughly one pubkey */
+}
+
+.Input-box-small::placeholder {
+  background-color: #914257;
+  color: #f5af59;
+}
+
+.Button-tiny-inline {
+  background-color: #492342;
+  color: #ed9682;
+  font-size: calc(2vmin);
+  height: calc(4px + 2vmin);
+  padding: 0px 0px 0px 0px;
+  border-radius: 1px;
+  margin: 0px 0px;
+  cursor: pointer;
+}
+
+.App-header {
+  background-color: #0a001c;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(4px + 3vmin);
+  color: #ed9682;
+}
+
+.Section-header {
+  font-size: calc(2px + 3vmin);
+  color: #ed9682;
+}
+
+.highlight-green {
+  background-image: radial-gradient(farthest-side at bottom, var(--primary) -780%, var(--background) 140%);
+}
+
+@keyframes pulseHighlight {
+
+  0%,
+  100% {
+    outline-width: 0px;
+  }
+
+  50% {
+    outline-width: 6px;
+  }
+}
+
+.highlight-pulse {
+  animation: pulseHighlight 1.3s infinite ease-in-out;
+  outline-style: solid;
+  outline-color: #103bd245;
+}
+
+.img-filter {
+  filter: grayscale(90%) contrast(100%) invert(0.77) sepia(0.5) hue-rotate(150deg) saturate(3.3);
+}
+
+@keyframes blink {
+
+  0%,
+  100% {
+    transform: scale(0.6);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+}
+
+.blinking {
+  display: inline-block;
+  animation: blink 1.3s infinite;
+}
+
+/* WalletConnect inherits text color and the background color defaults to white.
+So we must override the text color to add contrast. */
+.walletconnect-modal__mobile__toggle a {
+  color: var(--text-button);
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.diagonal-lines {
+  background: repeating-linear-gradient(-45deg, var(--panelStroke), var(--panelStroke) 1.7px, var(--background) 1.7px, var(--background) 10px);
+}

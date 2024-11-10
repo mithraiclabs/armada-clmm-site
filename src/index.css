@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Montserrat:wght@400;500;600&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: theme(colors.background.DEFAULT);
+  --container: theme(colors.background.container);
+  --darkContainer: theme(colors.background.darkContainer);
+  --panelStroke: theme(colors.background.panelStroke);
+  --text: theme(colors.text.DEFAULT);
+  --text-button: theme(colors.text.button);
+  --placeholder: theme(colors.text.placeholder);
+  --primary: theme(colors.primary.DEFAULT);
+  --chart-0: theme(colors.chart.0);
+  --chart-1: theme(colors.chart.1);
+  --chart-2: theme(colors.chart.2);
+  --chart-3: theme(colors.chart.3);
+  --chart-4: theme(colors.chart.4);
+  --chart-5: theme(colors.chart.5);
+
+  font-family: Montserrat, Inter, system-ui, Avenir, Helvetica, Arial,
+    sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: dark;
+  color: var(--text);
+  background-color: var(--background);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  overflow-x: hidden;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+
+  margin: 0;
+  /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+#root {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+/* TODO remove */
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
